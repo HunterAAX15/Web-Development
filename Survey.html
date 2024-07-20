@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" >
+<title> Survey Form </title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1 id="title"> Survey Form </h1>
+  <p id="description"> PLEASE FILL THIS FORM </p>
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label">Enter Your Name:<input id="name" type="text" placeholder="like Rohit" required/></label><br>
+      <label id="email-label">Enter Your Email:<input id="email" type="email" required placeholder="like roht117@gmail.com" required /></label><br>
+      <label id="number-label"> Enter Your Phone Number:<input type="number" id="number" min="1" max="10" placeholder="like **92**828" required /><label>
+      </fieldset>
+      <fieldset>
+        <label>How is our work?<br>
+          <input type="radio" value="1" name="survey-form" class="radio">Good</option><br>
+          <input type="radio" value="2" name="survey-form" class="radio">Bad</option><br>
+          <input type="radio" value="3" name="survey-form" class="radio">Average</option>
+         </label>
+<br>
+
+  <label id="us">How did you get know about us?
+    <select id="dropdown">
+      <option name="hibe">(select one)</option>
+      <option name="whatsapp">Whatsapp</option>
+      <option name="LinkedIN">LinkedIN</option>
+      <option name="refferals">Refferals</option>
+      <option name="other">Other</option>
+       </select>
+       </fieldset>
+       <div>
+       <label>Would you like to reffer for you freinds?<br>
+         <input type="checkbox" value="1"/> Yes <br>
+         <input type="checkbox" value="2"/> Maybe <br>
+         <input type="checkbox" value="3"/> No
+         </label> <br>
+        <label id="sugges"> Would you like to give us any suggestions or comments?<br>
+        <textarea id="suggest" rows="3" cols="30" placeholder="Enter here"></textarea>
+</label>
+</div>
+<input type="Submit" value="submit" id="submit" class="submit" name="survey-form"/>
+</form>
+</body>
+</html>
